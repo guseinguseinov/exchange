@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Exchange</title>
+    <link rel="icon" type="image/x-icon" href="./assets/images/icon.ico" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/heading.css" />
     <link rel="stylesheet" href="./assets/css/body.css" />
     <meta name="description" content="Convert money between all international currencies using the latest exchange rates." /> 
 </head>
 <body>
-    <header >
+    <header>
             <nav class="navbar navbar-expand-lg navbar-light ">
                 <a class="navbar-brand" href="./index.html">
                     <img src="./assets/images/logo.png" alt="logo" />
@@ -45,31 +46,31 @@
 
             <div class="money-div money-input-div">
                 <p>I have </p>
-                <div class="btn-group btn-group-custom">
-                    <button type="button" class="btn btn-secondary money-button">RUB</button>
-                    <button type="button" class="btn btn-secondary money-button">USD</button>
-                    <button type="button" class="btn btn-secondary money-button">EUR</button>
-                    <button type="button" class="btn btn-secondary money-button">GBP</button>
+                <div class="btn-group btn-group-custom first-currency-div">
+                    <button type="button" value="RUB" class="btn btn-secondary money-button">RUB</button>
+                    <button type="button" value="USD" class="btn btn-secondary money-button">USD</button>
+                    <button type="button" value="EUR" class="btn btn-secondary money-button">EUR</button>
+                    <button type="button" value="GBP" class="btn btn-secondary money-button">GBP</button>
                 </div>
 
                 <div class="border mt-4 p-3">
                     <input class="rounded" type="text" placeholder="...">
-                    <p>0</p>
+                    <p class="one-first-currency">0</p>
                 </div>
             </div>
 
             <div class="money-div money-output-div">
                 <p>Result money</p>
-                <div class="btn-group btn-group-custom">
-                    <button type="button" class="btn btn-secondary money-button">RUB</button>
-                    <button type="button" class="btn btn-secondary money-button">USD</button>
-                    <button type="button" class="btn btn-secondary money-button">EUR</button>
-                    <button type="button" class="btn btn-secondary money-button">GBP</button>
+                <div class="btn-group btn-group-custom second-currency-div">
+                    <button type="button" value="RUB" class="second-currency-rub btn btn-secondary money-button">RUB</button>
+                    <button type="button" value="USD" class="second-currency-usd btn btn-secondary money-button">USD</button>
+                    <button type="button" value="EUR" class="second-currency-eur btn btn-secondary money-button">EUR</button>
+                    <button type="button" value="GBP" class="second-currency-gbp btn btn-secondary money-button">GBP</button>
                 </div>
 
                 <div class="border mt-4 p-3">
                     <h2>0</h2>
-                    <p>0</p>
+                    <p class="one-second-currency">0</p>
                 </div>
             </div>
         </div>
@@ -77,6 +78,8 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="./assets/js/script.js" ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
 
 </body>
 </html>
