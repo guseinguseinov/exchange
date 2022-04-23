@@ -55,5 +55,8 @@ button.money-button:focus    {
     input {
         width: 100%;
     }
+    div.money-output-div {
+        margin-top: 40px;
+    }
 }
 
