@@ -1,0 +1,59 @@
+div.main-div {
+    width: 55%;
+    margin: 50px auto;
+}
+
+h1, h2, input {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42.19px;
+    margin-bottom: 30px;
+}
+
+input{
+    width: 260px;
+    border: 1px solid #E5E5E5;
+}
+
+div.container-custom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+p {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14.06px;
+    color: #9F9F9F;
+}
+
+button.money-button {
+    border: 1px solid #E5E5E5;
+    width: 65.06px;
+    background-color: #fff;
+    color: #C6C6C6;
+}
+
+button.money-button:hover {
+    background-color: #833AE0;
+    color: #fff;
+}
+
+button.money-button:focus    {
+    background-color: #833AE0;
+}
+
+@media screen and (max-width:991px) {
+    div.container-custom {
+        flex-direction: column;
+    }
+
+    div.btn-group-custom {
+        flex-wrap: wrap !important;
+    }
+    input {
+        width: 100%;
+    }
+}
+
