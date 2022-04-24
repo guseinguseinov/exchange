@@ -21,6 +21,10 @@ secondButtons.forEach( x => {
     });
 });
 
+userInputMoney.addEventListener('input', function () {
+    convert(firstCurrency, secondCurrency, userInputMoney.value);
+})
+
 const convert = function (firstMoneyCurrency, secondMoneyCurrency, money) {
     let amountMoney = String(money);
     if (amountMoney.indexOf(',') !== -1) amountMoney = amountMoney.replace(',', '.');
