@@ -23,13 +23,10 @@ secondButtons.forEach( x => {
 
 const convert = function (firstMoneyCurrency, secondMoneyCurrency, money) {
     let amountMoney = String(money);
-    if (amountMoney.indexOf(',') !== -1){
-        amountMoney = amountMoney.replace(',', '.');
-
-    }
+    if (amountMoney.indexOf(',') !== -1) amountMoney = amountMoney.replace(',', '.');
     
     
-    if ( isNaN(amountMoney)) {
+    if ( isNaN(amountMoney) ) {
         alert('Please, enter a number.');
     }else {
         fetch(`https://api.exchangerate.host/convert?from=${firstMoneyCurrency}&to=${secondMoneyCurrency}&amount=${amountMoney}`,)
